@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+
+    <form id="formCadastro">
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <div id="nomeErro" class="error"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <div id="emailErro" class="error"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="A senha deve conter no mínimo um número, uma letra maiúscula e uma minúscula, e no mínimo 8 caracteres" required>
+            
+            <button type="button" id="toggleSenha">Mostrar</button>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmaSenha">Confirme a senha:</label>
+            <input type="password" id="confirmaSenha" required>
+            <div id="confirmaSenhaErro" class="error"></div>
+        </div>
+        <button type="submit">Cadastrar</button>
+    </form>
+<script src="scripts.js"></script>
+</body>
+</html>

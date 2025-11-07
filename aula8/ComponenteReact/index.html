@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <form id="formulario">
+            <label for="nome">Digite seu nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="idade">Digite sua idade:</label>
+            <input type="text" id="idade" name="idade">
+
+            <label for="anoNascimento">Digite seu ano de nascimento:</label>
+            <input type="text" id="anoNascimento" name="anoNascimento">
+
+            <label for="profissao">Digite sua profissão</label>
+            <input type="text" id="profissao" name="profissao">
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <section>
+        <div id="titulo"></div>
+        <div id="root"></div>
+    </section>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="Greeting.jsx"></script>
+    <script type="text/babel" src="UserCard.jsx"></script>
+    
+</body>
+</html>

@@ -1,0 +1,11 @@
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+.form-group {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}

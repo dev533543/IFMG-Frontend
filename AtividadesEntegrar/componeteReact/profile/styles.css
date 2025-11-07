@@ -1,0 +1,19 @@
+#container_principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px, solid, #ccc;
+    border-radius: 12px;
+    padding: 20;
+    width: 250px;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0, 0, 10px, rgba(0, 0, 0, 1);
+}
+
+#profile_photo {
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
